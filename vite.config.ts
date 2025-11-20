@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 export default defineConfig({
-  server: {
-    allowedHosts: 'devserver-preview--anychar.netlify.app',
-  },
+ server: {
+ host: 'devserver-preview--anychar.netlify.app',
+ allowedHosts: ['devserver-preview--anychar.netlify.app'],
+ },
 });
