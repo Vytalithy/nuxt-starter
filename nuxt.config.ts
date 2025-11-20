@@ -4,9 +4,11 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-  allowedHosts: [
-    'devserver-preview--anychar.netlify.app',
-  ],
+  server: {
+    allowedHosts: [
+      'devserver-preview--anychar.netlify.app',
+    ],
+  },
   vite: {
     plugins: [
       tailwindcss(),
